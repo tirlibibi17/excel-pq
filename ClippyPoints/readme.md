@@ -20,3 +20,5 @@ And finally, the "points not awarded" query filters the results of SubRedditNewR
 * the correct answer may not have been provided in the hour that follows the post (although it often is)
 
 Note that the functions can easily be adapted to call other Reddit API methods.
+
+The **Query - points not awarded.odc** file contains the queries.
