@@ -1,10 +1,10 @@
 # A template for Power Query projects
 
-This includes a few things that can come in handy when working with Power Query
+This includes a few things that can come in handy when working with Power Query.
 
 ## A basic configuration parameter framework
 
-Function GetParam("key") return the associated value
+Function GetParam("key") returns the associated value.
 
 ## A few defined names that refer to the workbook's properties
 
@@ -13,6 +13,8 @@ These are all based on the result of `CELL("filename")` (stored in `fn_cell_file
 * `fn_filename`: the workbook's name without the full path
 * `fn_directory`: if the file is local, it returns the directory path; if the file is on a Sharepoint site (tested on on-prem Sharepoint 2010 with https enabled), `fn_cell_filename` contains the URL of the file (with extra brackets), but `fn_directory` converts it to UNC such as `\\hostname@SSL\DavWWWRoot\sites\path\to\directory`
 * `fn_full_path`: full file path
+
+__Note: if you open the file in Protected mode, these names will not update. Also, once you get out of Protected mode, there's a good chance the cells in the configuration table will display `#N/A!`. Just hit F9 to recalculate.__
 
 ## Examples of use
 
@@ -24,7 +26,7 @@ These are all based on the result of `CELL("filename")` (stored in `fn_cell_file
     in
         sheet1_Sheet
 
-One caveat: this will read the file from disk, so save first before using.
+__One caveat: this will read the file from disk, so save first before using.__
 
 ### Load from a subfolder of the workbook's path
 
