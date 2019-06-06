@@ -2,7 +2,7 @@
 
 The function is in the file CherryPick.xlsx. Its signature is the following:
 
-function HerryPick(`tbl` as table, `listOfCells` as list, *optional* `firstCell` as nullable text)
+function CherryPick(`tbl` as table, `listOfCells` as list, *optional* `firstCell` as nullable text)
 
 where:
 
