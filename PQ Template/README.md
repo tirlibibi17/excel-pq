@@ -16,6 +16,20 @@ These are all based on the result of `CELL("filename")` (stored in `fn_cell_file
 
 __Note: if you open the file in Protected mode, these names will not update. Also, once you get out of Protected mode, there's a good chance the cells in the configuration table will display `#N/A!`. Just hit F9 to recalculate.__
 
+### NEW! Perform Regular Expression matches with the RegexMatch function
+
+Thanks to Redditor /u/Senipah for the tip. RegexMatch is a generic function that behaves (more or less) like the JS match function.
+
+The RegexMatch function takes 3 arguments:
+
+* string: the text to perform the match on
+* pattern: the RegExp pattern to use
+* modifiers (optional): any modifiers, e.g. "i" for case-insensitive matching.
+
+If you pass it a pattern with no capturing groups, it will return a [list with one element containing the match](https://i.imgur.com/EZw3PlP.png) if a match is found or [null](https://i.imgur.com/ic6W0vh.png) if there's no match.
+
+If you pass it a pattern with capturing groups, it will return a [list with the first element containing the match](https://i.imgur.com/k0Wj4pT.png) and subsequent elements containing each capturing group.
+
 ## Examples of use
 
 ### Load a sheet in current workbook:
