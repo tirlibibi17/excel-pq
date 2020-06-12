@@ -8,7 +8,7 @@ Function GetParam("key") returns the associated value.
 
 ## A few defined names that refer to the workbook's properties
 
-These are all based on the result of `CELL("filename")` (stored in `fn_cell_filename`
+These are all based on the result of `CELL("filename")` (stored in `fn_cell_filename`)
 
 * `fn_filename`: the workbook's name without the full path
 * `fn_directory`: if the file is local, it returns the directory path; if the file is on a Sharepoint site (tested on on-prem Sharepoint 2010 with https enabled), `fn_cell_filename` contains the URL of the file (with extra brackets), but `fn_directory` converts it to UNC such as `\\hostname@SSL\DavWWWRoot\sites\path\to\directory`
