@@ -1,0 +1,8 @@
+<html><body><script>
+	var x = 'The quick brown fox jumps over the lazy dog';
+    var z = 'i';
+	var y = new RegExp('the quick brown (.*) jumps over the (.*) (.*)',z);
+	var a = "THE QUICK BROWN $1 JUMPS OVER THE $2 $3"
+	var result = x.replace(y,a);
+    document.write('<pre>' + result + '</pre>')
+</script></body><html>
